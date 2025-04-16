@@ -1,6 +1,10 @@
+import "./style.scss"
+
 function Heading(props) {
     return (
-        <h1>{props.children}</h1>
+        <div className="heading-wrapper">
+            <h1>{props.children}</h1>
+        </div>
     )
 }
 

@@ -1,7 +1,9 @@
+import Heading from "../components/Heading";
+
 function Contacts() {
     return (
         <>
-            <h1>Contacts</h1>
+            <Heading>Contacts</Heading>
         </>
     );
 }

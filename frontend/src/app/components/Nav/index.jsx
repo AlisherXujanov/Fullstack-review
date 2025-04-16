@@ -1,13 +1,15 @@
 import Link from "next/link";
+import "./style.scss"
+
+// EN: ./  means that style.scss file os located in 
+//     the same folder with index.jsx
+// ----------------------------------------------
+// RU: ./  означает, что style.scss файл находится 
+//      в той же папке, что и index.jsx
 
 function NavBar() {
     return (
-        <nav>
-            {/* external links */}
-            {/* <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a> */}
-
+        <nav className="main-nav-bar-wrapper">
             {/* internal links */}
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
