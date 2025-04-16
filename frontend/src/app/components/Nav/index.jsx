@@ -1,9 +1,17 @@
+import Link from "next/link";
+
 function NavBar() {
     return (
         <nav>
-            <a href="#">Link 1</a>
+            {/* external links */}
+            {/* <a href="#">Link 1</a>
             <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Link 3</a> */}
+
+            {/* internal links */}
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contacts">Contacts</Link>
         </nav>
     );
 }
