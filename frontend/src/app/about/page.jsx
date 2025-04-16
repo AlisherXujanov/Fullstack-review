@@ -1,11 +1,13 @@
 import Heading from "../components/Heading";
+import Paragraph from "../components/Paragraph";
+
 
 function About() {
     return (
         <>
             <Heading>About</Heading>
-            <p>lorem ipsum dolor sit amet</p>
-        </>
+            <Paragraph>lorem ipsum dolor sit amet</Paragraph>
+        </> 
     )
 }
 
