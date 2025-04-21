@@ -6,25 +6,36 @@ import { useState } from "react"
 
 function Searchbox(props) {
     const [searchVal, setSearchVal] = useState("")
+    const [searchResults, setSearchResults] = useState([])
 
     function handleChange(event) {
         const input = event.target
         const val = input.value
         setSearchVal(val)
+
+        let result = props.arr.filter(item => item.toLowerCase().includes(val.toLowerCase()))
+        setSearchResults(result)
     }
 
     return (
         <div className="searchbox-wrapper">
-            <p>{searchVal}</p>
             <input 
                 type="text" 
-                placeholder="Search..." 
+                placeholder={props.placeholderText}
                 value={searchVal}
                 onChange={handleChange}
             />
             <button id="search-btn">Search</button>
 
-            <div className="search-results"></div>
+            <div className="search-results">
+                {
+                    searchResults.length>0 
+                        ?
+                    searchResults.toString()
+                        :
+                    "No results found"
+                }
+            </div>
         </div>
     );
 }

@@ -19,7 +19,12 @@ export default function Home() {
 
         <br />
         <br />
-        <Searchbox />
+        <Searchbox arr={NAMES} placeholderText="Search for name" />
+        <br />
+        <Searchbox arr={FRUITS} placeholderText="Search for fruit" />
+        <br />
+        <Searchbox arr={BRANDS} placeholderText="Search for brand" />
+        <br />
       </Paragraph>
     </div>
   );
