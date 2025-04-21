@@ -1,4 +1,4 @@
-import "./globals.scss"
+import "../assets/styles/globals.scss"
 import NavBar from "./components/Nav"
 
 

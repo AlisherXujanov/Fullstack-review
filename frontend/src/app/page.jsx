@@ -9,3 +9,17 @@ export default function Home() {
     </div>
   );
 }
+
+// There are 2 types of components:
+// 1. Server components
+// 2. Client components (allow us use Hooks)
+
+// In very easy words:
+// Server components are our components that designed just to show any data on browser
+// RU: Серверные компоненты предназначены для отображения данных на браузере
+// UZ: Server komponentalar brauzerda ma'lumotlarni ko'rsatish uchun mo'ljallangan
+// ----------------------------------------------------------
+// EN: Client components are designed to work with the browser
+// RU: Клиентские компоненты предназначены для работы с браузером
+// UZ: Browserda ishlaydigan komponentalar
+// ----------------------------------------------------------
