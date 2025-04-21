@@ -14,7 +14,11 @@ function Searchbox(props) {
         setSearchVal(val)
 
         let result = props.arr.filter(item => item.toLowerCase().includes(val.toLowerCase()))
-        setSearchResults(result)
+        if (val.length > 0) {
+            setSearchResults(result)
+        } else {
+            setSearchResults([])
+        }
     }
 
     return (
